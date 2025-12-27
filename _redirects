@@ -1,0 +1,21 @@
+# Redirections propres pour les pages principales FR
+/index.html / 301
+/blog.html /blog.html 200
+/blog-akool.html /blog-akool.html 200
+/mentions-legales.html /mentions-legales.html 200
+/politique-de-confidentialite.html /politique-de-confidentialite.html 200
+
+# Redirections propres pour les pages principales EN
+/en/index.html /en/ 301
+/en/blog.html /en/blog.html 200
+/en/blog-akool.html /en/blog-akool.html 200
+/en/legal-notice.html /en/legal-notice.html 200
+/en/privacy-policy.html /en/privacy-policy.html 200
+
+# Redirections de sécurité et de canonical
+http://creativeai-tools.com/* https://creativeai-tools.com/:splat 301
+http://www.creativeai-tools.com/* https://creativeai-tools.com/:splat 301
+https://www.creativeai-tools.com/* https://creativeai-tools.com/:splat 301
+
+# Page 404 personnalisée
+/* /index.html 404

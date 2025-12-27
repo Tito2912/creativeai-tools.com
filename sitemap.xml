@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Pages FR -->
+  <url>
+    <loc>https://creativeai-tools.com/</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/blog.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/blog-akool.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog-akool.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog-akool.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog-akool.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/mentions-legales.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/legal-notice.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/politique-de-confidentialite.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/privacy-policy.html"/>
+  </url>
+
+  <!-- Pages EN -->
+  <url>
+    <loc>https://creativeai-tools.com/en/</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/en/blog.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/en/blog-akool.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog-akool.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog-akool.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog-akool.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/en/legal-notice.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/legal-notice.html"/>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.com/en/privacy-policy.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/politique-de-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/privacy-policy.html"/>
+  </url>
+
+</urlset>

@@ -1,0 +1,79 @@
+[build]
+  publish = "."
+
+# ---------- GLOBAL : Sécurité, RGPD, i18n ----------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Sécurité
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
+    Cross-Origin-Resource-Policy = "same-origin"
+    X-Permitted-Cross-Domain-Policies = "none"
+    X-Download-Options = "noopen"
+    # i18n: pour cohérence caches/proxy avec redirections Accept-Language
+    Vary = "Accept-Encoding, Accept-Language"
+    # CSP en mode Report-Only (ne bloque pas) ; durcir ensuite si souhaité
+    Content-Security-Policy-Report-Only = "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com; connect-src 'self' https://www.google-analytics.com; font-src 'self' data: https:; media-src 'self' blob:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    # Politique Permissions-Policy minimale et stricte
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), interest-cohort=()"
+
+# ---------- HTML : pas de mise en cache longue ----------
+[[headers]]
+  for = "/"
+  [headers.values]
+    Content-Language = "fr"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ---------- Pages FR ----------
+[[headers]]
+  for = "/blog.html"
+  [headers.values]
+    Content-Language = "fr"
+
+[[headers]]
+  for = "/blog-akool.html"
+  [headers.values]
+    Content-Language = "fr"
+
+[[headers]]
+  for = "/mentions-legales.html"
+  [headers.values]
+    Content-Language = "fr"
+
+[[headers]]
+  for = "/politique-de-confidentialite.html"
+  [headers.values]
+    Content-Language = "fr"
+
+# ---------- Pages EN ----------
+[[headers]]
+  for = "/en/*"
+  [headers.values]
+    Content-Language = "en"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ---------- Assets : cache long + immutable (fichiers versionnés recommandé) ----------
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
