@@ -41,9 +41,21 @@
     Content-Language = "fr"
 
 [[headers]]
+  for = "/blog"
+  [headers.values]
+    Content-Language = "fr"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
   for = "/blog-akool.html"
   [headers.values]
     Content-Language = "fr"
+
+[[headers]]
+  for = "/blog-akool"
+  [headers.values]
+    Content-Language = "fr"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/mentions-legales.html"
@@ -51,9 +63,21 @@
     Content-Language = "fr"
 
 [[headers]]
+  for = "/mentions-legales"
+  [headers.values]
+    Content-Language = "fr"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
   for = "/politique-de-confidentialite.html"
   [headers.values]
     Content-Language = "fr"
+
+[[headers]]
+  for = "/politique-de-confidentialite"
+  [headers.values]
+    Content-Language = "fr"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # ---------- Pages EN ----------
 [[headers]]
