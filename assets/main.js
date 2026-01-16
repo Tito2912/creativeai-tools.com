@@ -181,6 +181,22 @@ document.addEventListener('DOMContentLoaded', function () {
   // ---------- Filtrage des articles blog ----------
   const filterButtons = document.querySelectorAll('.filter-btn');
   if (filterButtons.length > 0) {
+    const applyCategoryFilter = (category) => {
+      if (!category) return;
+      const matchingButton = document.querySelector(`.filter-btn[data-category="${category}"]`);
+      if (!matchingButton) return;
+
+      document.querySelector('.filter-btn.active')?.classList.remove('active');
+      matchingButton.classList.add('active');
+      document.querySelectorAll('.post-card').forEach(article => {
+        article.style.display = (category === 'all' || article.dataset.category === category) ? 'block' : 'none';
+      });
+    };
+
+    // Support deep-links like /blog#comparatifs
+    const hashCategory = window.location.hash ? window.location.hash.slice(1) : '';
+    applyCategoryFilter(hashCategory);
+
     filterButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelector('.filter-btn.active')?.classList.remove('active');
