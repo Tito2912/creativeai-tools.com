@@ -28,19 +28,6 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Bloquer certains scrapers IA (facultatif)
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
 # Bots sociaux (aperçus de liens)
 User-agent: Twitterbot
 Allow: /
