@@ -11,7 +11,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/blog</loc>
@@ -21,7 +24,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/blog"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/blog-akool</loc>
@@ -31,7 +37,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog-akool"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog-akool"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog-akool"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/blog-akool"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/blog-akool"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/mentions-legales</loc>
@@ -41,7 +50,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/legal-notice"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/legal-notice"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/politique-de-confidentialite</loc>
@@ -51,7 +63,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/privacy-policy"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/privacy-policy"/>
+</url>
 
   <!-- Pages EN -->
   <url>
@@ -62,7 +77,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/en/blog</loc>
@@ -72,7 +90,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/blog"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/en/blog-akool</loc>
@@ -82,7 +103,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/blog-akool"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/blog-akool"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/blog-akool"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/blog-akool"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/blog-akool"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/en/legal-notice</loc>
@@ -92,7 +116,10 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/legal-notice"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/legal-notice"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.com/en/privacy-policy</loc>
@@ -102,6 +129,9 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.com/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.com/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.com/en/privacy-policy"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.com/de/privacy-policy"/>
+</url>
 
 </urlset>
