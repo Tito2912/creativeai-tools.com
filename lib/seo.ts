@@ -48,7 +48,7 @@ export function getOpenGraphImage(meta: DocMeta): string {
 
   if (meta.translationKey === 'invideo_review') return '/images/visual-3.png';
   if (meta.translationKey === 'invideo_update_2025') return '/images/visual-3.png';
-  if (meta.translationKey === 'akool_review') return '/images/visual-3.png';
+  if (meta.translationKey === 'akool_review') return '/images/blog/akool/og-akool.jpg';
 
   return '/images/visual-3.png';
 }
