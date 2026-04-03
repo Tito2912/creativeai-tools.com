@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import './globals.css';
 import { SITE } from '@/lib/site';
 import { buildOrganizationJsonLd, buildWebSiteJsonLd } from '@/lib/schema';
@@ -64,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <SiteFooter />
-        <Script src="/site.js" strategy="afterInteractive" />
+        <script src="/site.js" defer />
       </body>
     </html>
   );

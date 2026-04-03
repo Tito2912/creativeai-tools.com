@@ -820,6 +820,18 @@
     applyBlogSearch(tokenizeQuery(input.value || ''));
   }
 
+  function enhanceScrollAnimations() {
+    var nodes = document.querySelectorAll('[data-animate]');
+    if (!nodes || !nodes.length) return;
+
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      if (!el || !el.classList) continue;
+      if (el.classList.contains('animate')) continue;
+      el.classList.add('animate');
+    }
+  }
+
   function bindManageCookiesLink() {
     var links = document.querySelectorAll('[data-manage-cookies]');
     for (var i = 0; i < links.length; i++) {
@@ -849,6 +861,7 @@
     applyConsent(consent);
     enhanceGalleries();
     enhanceBlogSearch();
+    enhanceScrollAnimations();
   }
 
   function installSpaNavigationHook() {
@@ -875,6 +888,17 @@
   installSpaNavigationHook();
   installAffiliateClickHook();
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
-  else run();
+  function scheduleInitialRuns() {
+    run();
+    window.setTimeout(run, 50);
+    window.setTimeout(run, 250);
+    window.setTimeout(run, 1000);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scheduleInitialRuns);
+  else scheduleInitialRuns();
+
+  window.addEventListener('load', function () {
+    window.setTimeout(run, 0);
+  });
 })();
