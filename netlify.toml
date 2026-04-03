@@ -78,67 +78,67 @@
   from = "/blog"
   to = "/blog/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/blog-akool"
   to = "/blog-akool/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/tools"
   to = "/tools/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/legal-notice"
   to = "/legal-notice/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/privacy-policy"
   to = "/privacy-policy/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/fr/blog"
   to = "/fr/blog/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/fr/tools"
   to = "/fr/tools/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/es/blog"
   to = "/es/blog/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/es/tools"
   to = "/es/tools/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/de/blog"
   to = "/de/blog/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/de/tools"
   to = "/de/tools/"
   status = 301
-  force = true
+  force = false
 
 # -----------------------------------------------------------------------------
 # Best-effort .html normalization (legacy static pages)
@@ -281,4 +281,3 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
