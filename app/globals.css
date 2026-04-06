@@ -209,8 +209,8 @@ a:hover, a:focus { color: var(--primary-700); text-decoration: underline; }
 .logo-link img { height: 40px; width: auto; object-fit: contain; }
 
 .nav-menu { display: flex; align-items: center; gap: var(--space-6); list-style: none; }
-.nav-menu a { color: var(--gray-700); font-weight: var(--font-weight-medium); text-decoration: none; }
-.nav-menu a:hover { color: var(--primary-600); text-decoration: none; }
+.nav-menu a:not(.btn-primary):not(.btn-secondary) { color: var(--gray-700); font-weight: var(--font-weight-medium); text-decoration: none; }
+.nav-menu a:not(.btn-primary):not(.btn-secondary):hover { color: var(--primary-600); text-decoration: none; }
 
 .lang-selector { display: flex; align-items: center; gap: var(--space-2); }
 .lang-selector a[aria-current="page"] { color: var(--primary-600); font-weight: var(--font-weight-bold); }
@@ -278,13 +278,18 @@ a:hover, a:focus { color: var(--primary-700); text-decoration: underline; }
    Boutons
    ========================================================================== */
 
-.btn {
+.btn,
+.btn-primary,
+.btn-secondary {
   display: inline-flex; align-items: center; justify-content: center;
   padding: var(--space-3) var(--space-6);
   font-size: var(--font-size-base); font-weight: var(--font-weight-medium);
   text-decoration: none; border: none; border-radius: var(--border-radius);
   cursor: pointer; transition: all var(--transition-fast); line-height: 1;
 }
+.btn p,
+.btn-primary p,
+.btn-secondary p { margin: 0; }
 .btn-primary { background: var(--primary-600); color: var(--white); }
 .btn-primary:hover { background: var(--primary-700); color: var(--white); text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .btn-secondary { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--gray-300); }
