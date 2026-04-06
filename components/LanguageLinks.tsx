@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
-import { getLangFromPathname, localizedUrl, SITE } from '@/lib/site';
+import { getLangFromPathname, homePath, localizedUrl, SITE } from '@/lib/site';
 
 const LABELS: Record<string, string> = {
   en: 'English',
@@ -15,6 +15,7 @@ const LABELS: Record<string, string> = {
 export function LanguageLinks() {
   const pathname = usePathname() ?? '/';
   const current = getLangFromPathname(pathname);
+  const isNotFoundRoute = pathname.includes('_not-found') || pathname === '/404' || pathname === '/404/';
 
   return (
     <>
@@ -22,7 +23,7 @@ export function LanguageLinks() {
         <Fragment key={lang}>
           <Link
             aria-current={current === lang ? 'page' : undefined}
-            href={localizedUrl(pathname, lang)}
+            href={isNotFoundRoute ? homePath(lang) : localizedUrl(pathname, lang)}
             hrefLang={lang}
             lang={lang}
           >

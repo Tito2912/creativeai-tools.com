@@ -1,5 +1,5 @@
 import type { Post } from '@/lib/types';
-import { blogIndexPath, homePath, normalizeLang, SITE, UI_TRANSLATIONS } from '@/lib/site';
+import { blogIndexPath, homePath, normalizeLang, SITE, toolsIndexPath, UI_TRANSLATIONS } from '@/lib/site';
 
 const BASE_URL = SITE.baseUrl;
 const ORG_ID = `${BASE_URL}/#organization`;
@@ -147,7 +147,25 @@ export function buildBreadcrumbJsonLd(post: Post) {
     };
   }
 
-  const crumbs: Crumb[] = [home, { name: stripBrandSuffix(post.title) || post.title, path: canonicalPathFromPost(post) }];
+  const canonicalPath = canonicalPathFromPost(post);
+  const title = stripBrandSuffix(post.title) || post.title;
+  const crumbs: Crumb[] = [home, { name: title, path: canonicalPath }];
+
+  // Tool pages benefit from a Tools hub crumb: Home > Tools > Tool
+  const isToolPage = /^\/tools\/[^/]+\/$/.test(canonicalPath) || /^\/(fr|es|de)\/tools\/[^/]+\/$/.test(canonicalPath);
+  if (isToolPage) {
+    const toolCrumbs: Crumb[] = [home, { name: ui.tools, path: toolsIndexPath(lang) }, { name: title, path: canonicalPath }];
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: toolCrumbs.map((c, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: c.name,
+        item: idx === toolCrumbs.length - 1 ? url : new URL(c.path, BASE_URL).toString(),
+      })),
+    };
+  }
 
   return {
     '@context': 'https://schema.org',

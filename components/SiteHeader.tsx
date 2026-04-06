@@ -24,6 +24,7 @@ export function SiteHeader() {
   const lang = getLangFromPathname(pathname);
   const t = UI_TRANSLATIONS[lang];
   const [isOpen, setIsOpen] = useState(false);
+  const isNotFoundRoute = pathname.includes('_not-found') || pathname === '/404' || pathname === '/404/';
 
   function onNavLinkClick(e?: MouseEvent<HTMLElement>) {
     try {
@@ -106,7 +107,7 @@ export function SiteHeader() {
                   {SITE.supportedLangs.map((l) => (
                     <Link
                       aria-current={l === lang ? 'page' : undefined}
-                      href={localizedUrl(pathname, l)}
+                      href={isNotFoundRoute ? homePath(l) : localizedUrl(pathname, l)}
                       hrefLang={l}
                       key={l}
                       lang={l}
