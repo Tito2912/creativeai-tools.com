@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from 'next';
+import React from 'react';
 import './globals.css';
 import { SITE } from '@/lib/site';
 import { buildOrganizationJsonLd, buildWebSiteJsonLd } from '@/lib/schema';
 import { SiteFooter } from '@/components/SiteFooter';
 import { SiteHeader } from '@/components/SiteHeader';
 import { LangHtmlUpdater } from '@/components/LangHtmlUpdater';
+
+const IMPACT_SITE_VERIFICATION = '9473c0ea-5a14-480b-9d48-2f2d21b71fd5';
 
 export const viewport: Viewport = {
   themeColor: '#ffffff',
@@ -51,6 +54,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {React.createElement(
+          'meta',
+          {
+            name: 'impact-site-verification',
+            content: IMPACT_SITE_VERIFICATION,
+            value: IMPACT_SITE_VERIFICATION,
+          } as unknown as React.MetaHTMLAttributes<HTMLMetaElement> & { value: string },
+        )}
+      </head>
       <body data-ga4-id={SITE.ga4Id}>
         <LangHtmlUpdater />
         <a className="skip-link" href="#main-content">
